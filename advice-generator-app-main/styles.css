@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  --mainBackground-clr: hsl(218, 23%, 16%);
+  --numBtn-clr: hsl(150, 100%, 66%);
+  --white: #fff;
+  --adviceBackground-clr: hsl(217, 19%, 24%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  line-break: 1.5;
+  font-size: 10px;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: lighter;
+  background-color: var(--mainBackground-clr);
+  overflow-x: hidden;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  width: 35rem;
+  background-color: var(--adviceBackground-clr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 3rem;
+}
+
+.card--name {
+  letter-spacing: 4px;
+  font-size: 1.3rem;
+  color: var(--numBtn-clr);
+  text-transform: uppercase;
+}
+
+.card--desc {
+  color: var(--white);
+  margin-top: 3rem;
+  font-size: 2.4rem;
+}
+
+.divider {
+  margin-bottom: auto;
+  transform: translateY(4rem);
+}
+
+.dice {
+  background-color: var(--numBtn-clr);
+  outline: none;
+  border: 0;
+  transform: translateY(6.5rem);
+  padding: 2rem;
+  border-radius: 50%;
+}
+
+.dice:hover {
+  filter: drop-shadow(0 0 0.75rem hsl(150, 100%, 66%));
+  transition: all 0.2s ease-out;
+}
